@@ -1,0 +1,19 @@
+ogb:
+  device: 0
+  log_steps: 1
+  use_sage: False
+  num_layers: 3
+  hidden_channels: 256
+  dropout: 0.5
+  lr: 0.01
+  epochs: 500
+  runs: 10
+
+plh:
+  bool: True
+  radius: 2
+  degree: 8
+  maxdim: 1
+  resolution: 16
+  center: False
+  filtration: distance_matrix

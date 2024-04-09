@@ -1,0 +1,39 @@
+data:
+  name: PPI
+  idx: 0
+  val_prop: 0.05
+  test_prop: 0.1
+  cache: False
+  verbose: False
+
+plh:
+  both: True
+  bool: True
+  radius: 2
+  degree: 8
+  maxdim: 1
+  resolution: 16
+  center: False
+  filtration: distance_matrix
+
+model:
+  name: SAGE
+  in_channels: 50
+  hidden_channels: 256
+  mlp_hidden_channels: 256
+  num_layers: 2
+  dropout: 0.5
+  emb_dropout: 0.5
+  fd_temperature: 0.5
+
+train:
+  seed: 0
+  n_epochs: 2500
+  runs: 20
+
+test:
+  threas: sample
+
+log:
+  log_step: 20
+  plot: False
